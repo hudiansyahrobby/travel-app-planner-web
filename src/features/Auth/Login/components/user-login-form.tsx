@@ -79,7 +79,7 @@ export function UserLoginForm({ className, ...props }: UserLoginFormProps) {
               )}
             />
           </div>
-          <Button isLoading={isLoading}>Sign Up</Button>
+          <Button isLoading={isLoading}>Sign In</Button>
         </div>
       </Form>
       <div className="relative">
