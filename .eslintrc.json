@@ -3,6 +3,7 @@
   "extends": [
     "next/core-web-vitals",
     "next/typescript",
+    "plugin:@tanstack/query/recommended",
     "eslint:recommended",
     "prettier",
     "plugin:@typescript-eslint/recommended",
