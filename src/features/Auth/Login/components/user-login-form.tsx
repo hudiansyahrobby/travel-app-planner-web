@@ -3,6 +3,8 @@
 import * as React from "react";
 import { useForm } from "react-hook-form";
 
+import { signIn } from "next-auth/react";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { GithubIcon } from "lucide-react";
 
@@ -79,22 +81,28 @@ export function UserLoginForm({ className, ...props }: UserLoginFormProps) {
               )}
             />
           </div>
-          <Button isLoading={isLoading}>Sign In</Button>
+          <Button
+            isLoading={isLoading}
+            type="button"
+            onClick={() => signIn("credentials")}
+          >
+            Sign In
+          </Button>
         </div>
+        <div className="relative">
+          <div className="absolute inset-0 flex items-center">
+            <span className="w-full border-t" />
+          </div>
+          <div className="relative flex justify-center text-xs uppercase">
+            <span className="text-muted-foreground bg-background px-2">
+              Or continue with
+            </span>
+          </div>
+        </div>
+        <Button variant="outline" type="button" isLoading={isLoading}>
+          {!isLoading && <GithubIcon className="mr-2 h-4 w-4" />} GitHub
+        </Button>
       </Form>
-      <div className="relative">
-        <div className="absolute inset-0 flex items-center">
-          <span className="w-full border-t" />
-        </div>
-        <div className="relative flex justify-center text-xs uppercase">
-          <span className="text-muted-foreground bg-background px-2">
-            Or continue with
-          </span>
-        </div>
-      </div>
-      <Button variant="outline" type="button" isLoading={isLoading}>
-        {!isLoading && <GithubIcon className="mr-2 h-4 w-4" />} GitHub
-      </Button>
     </form>
   );
 }
