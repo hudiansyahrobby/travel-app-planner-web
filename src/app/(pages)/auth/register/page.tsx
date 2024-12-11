@@ -2,7 +2,7 @@ import React from "react";
 
 import { Metadata } from "next";
 
-import Register from "@/features/Auth/Register";
+import Register from "@/features/auth/register";
 
 export const metadata: Metadata = {
   title: "Sign Up",

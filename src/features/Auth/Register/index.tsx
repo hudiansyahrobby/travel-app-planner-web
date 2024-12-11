@@ -39,12 +39,12 @@ export default function Register() {
               <h1 className="text-2xl font-semibold tracking-tight">
                 Create an account
               </h1>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-sm text-gray-500">
                 Enter your email below to create your account
               </p>
             </div>
             <UserRegisterForm />
-            <p className="text-muted-foreground px-8 text-center text-sm">
+            <p className="px-8 text-center text-sm text-gray-500">
               By clicking continue, you agree to our{" "}
               <Link
                 href="/terms"

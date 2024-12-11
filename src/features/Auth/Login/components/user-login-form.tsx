@@ -94,7 +94,7 @@ export function UserLoginForm({ className, ...props }: UserLoginFormProps) {
             <span className="w-full border-t" />
           </div>
           <div className="relative flex justify-center text-xs uppercase">
-            <span className="text-muted-foreground bg-background px-2">
+            <span className="bg-background px-2 text-gray-500">
               Or continue with
             </span>
           </div>

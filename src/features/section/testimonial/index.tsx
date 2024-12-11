@@ -76,7 +76,7 @@ const Testimonial = () => {
                 <p className="mb-1 text-sm font-medium md:text-lg">
                   {testimonial.name}
                 </p>
-                <p className="text-muted-foreground mb-2 text-sm md:text-lg">
+                <p className="mb-2 text-sm text-gray-500 md:text-lg">
                   {testimonial.role}
                 </p>
                 <div className="mt-2 flex items-center gap-0.5">

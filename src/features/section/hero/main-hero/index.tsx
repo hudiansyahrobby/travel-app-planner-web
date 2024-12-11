@@ -13,7 +13,7 @@ const MainHero = () => {
           <h1 className="text-3xl font-extrabold lg:text-6xl">
             Plan Your Dream Trips With Ease
           </h1>
-          <p className="text-muted-foreground text-balance lg:text-lg">
+          <p className="text-balance text-gray-500 lg:text-lg">
             Explore tools to create personalized travel itineraries, manage
             bookings, and discover amazing destinations. Your ultimate travel
             companion starts here.
@@ -53,7 +53,7 @@ const MainHero = () => {
               <Star className="size-5 fill-yellow-400 text-yellow-400" />
               <span className="font-semibold">5.0</span>
             </div>
-            <p className="text-muted-foreground text-left font-medium">
+            <p className="text-left font-medium text-gray-500">
               Loved by over 200 travellers worldwide.
             </p>
           </div>

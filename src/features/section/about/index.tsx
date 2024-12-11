@@ -24,9 +24,7 @@ const About = () => {
             className="size-full max-h-96 rounded-2xl object-contain"
           />
           <div className="bg-muted flex flex-col rounded-2xl p-10">
-            <p className="text-muted-foreground text-sm font-bold">
-              OUR MISSION
-            </p>
+            <p className="text-sm font-bold text-gray-500">OUR MISSION</p>
             <p className="text-lg font-medium">
               We believe that travel planning should be seamless and inspiring.
               Our mission is to empower adventurers worldwide to craft their
@@ -40,7 +38,7 @@ const About = () => {
             <h2 className="mb-2.5 text-3xl font-semibold md:text-5xl">
               Empowering Your Journey, Simplifying Travel
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-gray-500">
               From dreaming to exploring, we take the hassle out of travel
               planning so you can focus on what matters—making memories.
             </p>
@@ -53,7 +51,7 @@ const About = () => {
               <h3 className="mb-3 mt-2 text-lg font-semibold">
                 Customised Itineraries
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-gray-500">
                 We empower travellers to create personalised plans tailored to
                 their interests, budgets, and schedules.
               </p>
@@ -65,7 +63,7 @@ const About = () => {
               <h3 className="mb-3 mt-2 text-lg font-semibold">
                 Seamless Bookings
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-gray-500">
                 Book flights, hotels, and activities all in one place with our
                 easy-to-use tools.
               </p>
@@ -77,7 +75,7 @@ const About = () => {
               <h3 className="mb-3 mt-2 text-lg font-semibold">
                 Explore New Destinations
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-gray-500">
                 Discover unique spots and local favourites to make your trips
                 unforgettable.
               </p>

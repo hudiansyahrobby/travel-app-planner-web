@@ -39,14 +39,14 @@ export default function Register() {
               <h1 className="text-2xl font-semibold tracking-tight">
                 Welcome Back!
               </h1>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-sm text-gray-500">
                 Log in to access your account and manage your travel plans.
               </p>
             </div>
             <UserLoginForm />
             <Link
               href="/terms"
-              className="text-muted-foreground px-8 text-center text-sm underline underline-offset-4 hover:text-primary"
+              className="px-8 text-center text-sm text-gray-500 underline underline-offset-4 hover:text-primary"
             >
               Forgot Your Password?
             </Link>
