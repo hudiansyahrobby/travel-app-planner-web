@@ -11,11 +11,13 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        padding: "1rem",
+      },
       colors: {
         primary: "#FF6F61",
-        secondary: "#40E0D0",
-        accent: "#FFC300",
-        background: "#F7F7F7",
+        secondary: "#F7F7F7",
+        accent: "#fff2f1",
         text: "#333333",
         coral: {
           50: "#fff2f1",
@@ -97,10 +99,30 @@ export default {
             height: "0",
           },
         },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquees: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        "marquee-reverse": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        "marquees-reverse": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         accordionDown: "accordion-down 0.2s ease-out",
         accordionUp: "accordion-up 0.2s ease-out",
+        marquee: "marquee 10s linear infinite",
+        marquees: "marquees 10s linear infinite",
+        "marquee-reverse": "marquee-reverse 10s linear infinite",
+        "marquees-reverse": "marquees-reverse 10s linear infinite",
       },
     },
   },
