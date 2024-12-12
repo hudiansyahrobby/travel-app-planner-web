@@ -9,6 +9,10 @@ export const routes = {
   about: "/about",
   contact: "/contact",
   blog: "/blog",
-  login: "/auth/login",
-  signup: "/auth/signup",
+  auth: {
+    login: "/auth/login",
+    signup: "/auth/signup",
+  },
+  products: "/products",
+  pricing: "/pricing",
 };
