@@ -4,6 +4,9 @@ import localFont from "next/font/local";
 import NextAuthProvider from "@/providers/next-auth-provider";
 import ReactQueryProvider from "@/providers/react-query-provider";
 
+import Footer from "@/components/layout/footer";
+import Header from "@/components/layout/header";
+
 import { getSession } from "@/lib/auth";
 
 import "./globals.css";
@@ -37,7 +40,11 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextAuthProvider session={session}>
-          <ReactQueryProvider>{children}</ReactQueryProvider>
+          <ReactQueryProvider>
+            <Header />
+            {children}
+            <Footer />
+          </ReactQueryProvider>
         </NextAuthProvider>
       </body>
     </html>
