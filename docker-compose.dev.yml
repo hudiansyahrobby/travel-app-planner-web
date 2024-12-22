@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  nextjs:
+    extends:
+      file: docker-compose.base.yml
+      service: nextjs
+    build:
+      target: development
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - "3000:3000"
+    command: npm run dev

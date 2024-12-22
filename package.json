@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky install; fi"
   },
   "husky": {
     "hooks": {
